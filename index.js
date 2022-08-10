@@ -55,7 +55,7 @@ formInput.addEventListener('submit', function(e){
     e.preventDefault();
     let value = document.getElementById("todo-input")
     console.log(value);
-    if (value.value === " ") {
+    if (!value?.value.trim()) {
        return alert('isi mas')
     }
     const data  = new FormData();
