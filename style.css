@@ -288,6 +288,9 @@ li.project-content:hover{
     color: green;
 }
 
+.project-content-left:hover{
+    cursor: pointer;
+}
 
 /* ================= FORM SECTION ============== */
 
