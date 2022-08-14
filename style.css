@@ -8,6 +8,7 @@
 
 body{
     overflow-x: hidden;
+    background-image: linear-gradient(to right,rgb(117, 94, 230) 50%,rgb(29, 158, 254)90%);
 }
 
 
@@ -228,13 +229,13 @@ body{
 
 .project-header{
     border-radius: 10px;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     height: 60px;
-    background-image: linear-gradient(to bottom right,rgb(117, 94, 230),rgb(29, 158, 254));
+    background: white;    
 }
 
 .project-header i{
@@ -245,38 +246,29 @@ body{
 .project-body{
     margin-top: 20px;
     padding: 20px;
-    background-image: linear-gradient(to bottom right,rgb(117, 94, 230),rgb(29, 158, 254));
+    background: white;
     border-radius: 10px;
     overflow: scroll;
     height: 100%;
 }
 
-.project-card{
-    background-image: linear-gradient(to bottom right,rgb(117, 94, 230),rgb(29, 158, 254));
-  
-}
-
 li.project-content{
+    overflow: hidden;
     background-color: aliceblue;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     box-shadow: 0px 7px 0px rgba(0, 0, 0, .3);
     border-radius: 5px;
-    margin-bottom: 7px;
-    transition: all ease .5s;
+    margin-top: 14px;
+    position: relative;
+    bottom: 14px;
+    transition: all .2s ease;
 }   
 
-li.project-content:nth-child(1):hover{
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
-    margin-top: 7px;
-    transition: all ease .5s;
-}
-
 li.project-content:hover{
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
-    margin-top: 14px;
-    transition: all ease .5s;
+    box-shadow: none;
+    bottom: 7px;
 }
 
 .project-content-right p{
